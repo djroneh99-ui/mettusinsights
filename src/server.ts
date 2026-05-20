@@ -1,3 +1,8 @@
-import { startInstance } from "./start";
+import { createStartHandler, defaultStreamHandler } from "@tanstack/react-start/server";
+import { getRouter } from "./router";
 
-export default startInstance;
+const handler = createStartHandler({
+  createRouter: getRouter,
+});
+
+export default handler(defaultStreamHandler);
