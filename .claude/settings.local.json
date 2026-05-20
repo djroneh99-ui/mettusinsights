@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node -e \"const p = require\\('c:/Users/XDS-Monitor/Downloads/Insights/node_modules/@tanstack/react-start/package.json'\\); console.log\\(JSON.stringify\\(Object.keys\\(p.exports || {}\\), null, 2\\)\\)\" 2>&1)",
+      "PowerShell(node -e \"const m = require\\('c:/Users/XDS-Monitor/Downloads/Insights/node_modules/@tanstack/react-start/dist/plugin/vite/index.cjs'\\); console.log\\(Object.keys\\(m\\)\\)\" 2>&1)"
+    ]
+  }
+}
