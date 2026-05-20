@@ -5,7 +5,7 @@ import tsConfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { nitro } from "nitro/vite";
 
-// Vercel deployment configuration for TanStack Start
+// TanStack Start with Nitro - configured for Vercel deployment
 export default defineConfig(({ mode }) => {
   const envDefine: Record<string, string> = {};
   const loadedEnv = loadEnv(mode, process.cwd(), "VITE_");
